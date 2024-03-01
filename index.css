@@ -1,0 +1,87 @@
+header{
+    background-color: #000000;         /*cor de fundo do cabecalho*/
+    padding: 20px;                       /*altura do cabecalho*/
+    margin-top: -15px;                   /*margem de cima do cabecalho, numero negativo para grudar no topo*/
+    margin-left:-15px;                   /*margem esquerda do cabecalho, numero negativo para grudar na esquerda*/
+    margin-right:-15px;                  /*margem direita do cabecalho, numero negativo para grudar na direita*/    }
+    
+    .Titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        color: #1e1e1e;
+    }
+    
+    h2{letter-spacing: 2px;}
+    
+    .text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: #6b6969;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .container {
+        text-align: center;              /* Centraliza o conteúdo na horizontal */
+        margin-left: 40px;
+    }
+    
+    .imagem {
+        width: 80px;                     /* Tamanho*/
+        margin:1px;                   /* Espaç entre as imagens */
+       vertical-align: center;}
+
+    .logo{                 
+        width: 100px;                     /*aqui eu tive que colocar a logo em outra classe porque ela nao estava se alinhando corretamente em relacao as outras imagens*/
+        margin-left: -55px;              /*mas como ela ainda esta "ligada" as outras imagens para centraliza-las tuive q puxar um pouco pra esquerda pois estavam ficando alinhadas um pouco a direita*/
+        margin: 15px;;   /*e e esse comando o motivo de criar outra classe, aqui eu uso uma calculadora q adicina por exemplo x numero  a posicao em que estava, se nao fosse esse comando a logo ainda estaria alinhada tortamente*/}
+  
+    
+        /* Define as coisas basicas para o carrossel */
+        .carousel {             
+            position: relative;/* Define a posição relativa para os elementos  */
+            max-width: 650px;  /*largura max. para o carrosel*/
+            margin: 0 auto;    /*entraliza automaticamente*/
+            overflow: hidden;  /*nao mostra o que passa do limite*/
+        }
+        
+        .carousel-slide {
+            display: none;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+        }
+        
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            z-index: 100;
+        }
+        
+        #prevBtn {
+            left: 0;
+        }
+        
+        #nextBtn {
+            right: 0;
+        }
+              
+        .redirecionamento{ 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #1e1e1e;
+           text-align: center;
+            
+        }
